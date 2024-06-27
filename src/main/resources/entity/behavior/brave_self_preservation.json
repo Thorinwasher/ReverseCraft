@@ -1,0 +1,8 @@
+{
+  "key": "behavior/brave_self_preservation",
+  "type": "behavior_type/self_preservation",
+  "data": {
+    "can_attack": false,
+    "run_away": "never"
+  }
+}

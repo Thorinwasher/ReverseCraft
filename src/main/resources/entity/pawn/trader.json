@@ -1,0 +1,15 @@
+{
+  "key": "pawn/trader",
+  "behaviors": [
+    "behavior/cowardly_self_preservation",
+    "behavior/slow_resource_gatherer",
+    "behavior/mediocre_researcher",
+    "behavior/logistics_expert",
+    "behavior/explorer",
+    "behavior/sleep"
+    ],
+  "tribe": "tribe/villagers",
+  "entity": "minecraft:trader",
+  "name": "trader",
+  "max_health": 30
+}

@@ -1,0 +1,8 @@
+{
+  "key": "attack/snow_ranged",
+  "type": "attack_type/ranged",
+  "data": {
+    "item": "minecraft:snow_ball",
+    "damage": 2
+  }
+}

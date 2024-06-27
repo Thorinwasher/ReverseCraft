@@ -1,0 +1,7 @@
+{
+  "key": "attack/throw_harm_potion",
+  "type": "attack_type/throw_potion",
+  "data": {
+    "effect": "minecraft:instant_damage"
+  }
+}

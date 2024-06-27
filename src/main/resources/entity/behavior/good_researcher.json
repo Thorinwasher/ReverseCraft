@@ -1,0 +1,7 @@
+{
+  "key": "behavior/good_researcher",
+  "type": "behavior_type/researcher",
+  "data": {
+    "research_rate": 10
+  }
+}

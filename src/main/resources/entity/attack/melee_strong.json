@@ -1,0 +1,8 @@
+{
+  "key": "attack/melee_strong",
+  "type": "attack_type/melee",
+  "data": {
+    "damage": 10,
+    "delay": 80
+  }
+}

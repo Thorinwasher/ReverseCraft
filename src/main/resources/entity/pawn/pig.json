@@ -1,0 +1,11 @@
+{
+  "key": "pawn/pig",
+  "behaviors": [
+    "behavior/resource",
+    "behavior/breeding"
+  ],
+  "tribe": "tribe/farm_animal",
+  "entity": "minecraft:pig",
+  "name": "pig",
+  "max_health": 10
+}

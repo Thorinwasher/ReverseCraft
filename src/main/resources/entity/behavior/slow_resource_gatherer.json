@@ -1,0 +1,7 @@
+{
+  "key": "behavior/slow_resource_gatherer",
+  "type": "behavior_type/resource_gatherer",
+  "data": {
+    "work_power": 4
+  }
+}

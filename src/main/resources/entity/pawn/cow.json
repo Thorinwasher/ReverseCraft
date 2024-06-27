@@ -1,0 +1,11 @@
+{
+  "key": "pawn/cow",
+  "behaviors": [
+    "behavior/resource",
+    "behavior/breeding"
+  ],
+  "tribe": "tribe/farm_animal",
+  "entity": "minecraft:cow",
+  "name": "cow",
+  "max_health": 10
+}

@@ -1,0 +1,14 @@
+{
+  "key": "pawn/iron_golem",
+  "behaviors": [
+    "behavior/self_preservation",
+    "behavior/defender"
+  ],
+  "attacks": [
+    "attack/melee_strong"
+  ],
+  "tribe": "tribe/villagers",
+  "entity": "minecraft:iron_golem",
+  "name": "iron_golem",
+  "max_health": 100
+}

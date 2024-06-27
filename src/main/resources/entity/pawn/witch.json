@@ -1,0 +1,18 @@
+{
+  "key": "pawn/witch",
+  "behaviors": [
+    "behavior/self_preservation",
+    "behavior/fast_resource_gatherer",
+    "behavior/good_researcher",
+    "behavior/golem_constructor",
+    "behavior/sleep"
+  ],
+  "attacks": [
+    "attack/throw_harm_potion",
+    "attack/explosive_magic"
+  ],
+  "tribe": "tribe/villagers",
+  "entity": "minecraft:witch",
+  "name": "witch",
+  "max_health": 40
+}

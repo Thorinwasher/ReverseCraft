@@ -1,0 +1,7 @@
+{
+  "key": "behavior/logistics_apprentice",
+  "type": "behavior_type/logistics",
+  "data": {
+    "item_load": 128
+  }
+}

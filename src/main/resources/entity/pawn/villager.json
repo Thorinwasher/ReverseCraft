@@ -1,0 +1,17 @@
+{
+  "key": "pawn/villagers",
+  "behaviors": [
+    "behavior/cowardly_self_preservation",
+    "behavior/fast_resource_gatherer",
+    "behavior/logistics_apprentice",
+    "behavior/builder",
+    "behavior/bad_researcher",
+    "behavior/breeding",
+    "behavior/villager_upgradeable",
+    "behavior/sleep"
+  ],
+  "tribe": "tribe/villagers",
+  "entity": "minecraft:villager",
+  "name": "villager",
+  "max_health": 25
+}

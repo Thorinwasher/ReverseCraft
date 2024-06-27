@@ -1,0 +1,8 @@
+{
+  "key": "behavior/fast_breeding",
+  "type": "behavior_type/breeding",
+  "data": {
+    "type": "partner",
+    "min_days_between": 8
+  }
+}

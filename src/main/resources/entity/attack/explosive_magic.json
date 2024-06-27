@@ -1,0 +1,7 @@
+{
+  "key": "attack/explosive_magic",
+  "type": "attack_type/magic",
+  "data": {
+    "magic_type": "explosive"
+  }
+}

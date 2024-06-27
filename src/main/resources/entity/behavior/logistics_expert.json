@@ -1,0 +1,7 @@
+{
+  "key": "behavior/logistics_expert",
+  "type": "behavior_type/logistics",
+  "data": {
+    "item_load": 564
+  }
+}

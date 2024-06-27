@@ -1,0 +1,14 @@
+{
+  "key": "pawn/snow_golem",
+  "behaviors": [
+    "behavior/self_preservation",
+    "behavior/defender"
+  ],
+  "attacks": [
+    "attack/snow_ranged"
+  ],
+  "tribe": "tribe/villagers",
+  "entity": "minecraft:snow_golem",
+  "name": "snow_golem",
+  "max_health": 40
+}

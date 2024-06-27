@@ -1,0 +1,10 @@
+{
+  "key": "behavior/villager_upgradeable",
+  "type": "behavior_type/upgradeable",
+  "data": {
+    "upgradeable_to": [
+      "pawn/witch",
+      "pawn/trader"
+    ]
+  }
+}
