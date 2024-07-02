@@ -5,7 +5,7 @@
     "behavior/fast_resource_gatherer",
     "behavior/good_researcher",
     "behavior/golem_constructor",
-    "behavior/sleep"
+    "behavior/night_sleeper"
   ],
   "attacks": [
     "attack/throw_harm_potion",
@@ -14,5 +14,6 @@
   "tribe": "tribe/villagers",
   "entity": "minecraft:witch",
   "name": "witch",
-  "max_health": 40
+  "max_health": 40,
+  "movement": "movement/medium"
 }

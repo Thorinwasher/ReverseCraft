@@ -5,6 +5,10 @@ import com.google.gson.JsonObject;
 
 public class JsonUtil {
 
+    private JsonUtil(){
+        throw new IllegalStateException("Utility class");
+    }
+
     public static JsonObject getObjectOrEmpty(JsonObject jsonObject, String key) {
         if (jsonObject.has(key)) {
             return jsonObject.get(key).getAsJsonObject();

@@ -3,13 +3,14 @@
   "behaviors": [
     "behavior/cowardly_self_preservation",
     "behavior/slow_resource_gatherer",
-    "behavior/mediocre_researcher",
+    "behavior/bad_researcher",
     "behavior/logistics_expert",
     "behavior/explorer",
-    "behavior/sleep"
+    "behavior/night_sleeper"
     ],
   "tribe": "tribe/villagers",
   "entity": "minecraft:trader",
   "name": "trader",
-  "max_health": 30
+  "max_health": 30,
+  "movement": "movement/medium"
 }

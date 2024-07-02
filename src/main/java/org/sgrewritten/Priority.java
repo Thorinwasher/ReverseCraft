@@ -16,7 +16,7 @@ public class Priority {
         this.level = level;
     }
 
-    public int getLevel(){
-        return level;
+    public boolean largerThan(Priority other) {
+        return this.level > other.level;
     }
 }

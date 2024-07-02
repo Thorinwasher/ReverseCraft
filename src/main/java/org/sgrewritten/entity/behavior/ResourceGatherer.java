@@ -4,18 +4,21 @@ import com.google.gson.JsonObject;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.Priority;
 import org.sgrewritten.entity.BaseEntity;
+import org.sgrewritten.entity.goal.Goal;
 
 public class ResourceGatherer implements Behavior {
 
 
-    public static ResourceGatherer from(JsonObject jsonObject, NamespaceID namespaceID) {
-        return new ResourceGatherer();
+    private final NamespaceID key;
+
+    public ResourceGatherer(NamespaceID key) {
+        this.key = key;
     }
 
-    @Override
-    public void doTick(BaseEntity baseEntity) {
-
+    public static ResourceGatherer from(JsonObject jsonObject, NamespaceID key) {
+        return new ResourceGatherer(key);
     }
+
 
     @Override
     public Priority getPriority(BaseEntity baseEntity) {
@@ -23,7 +26,12 @@ public class ResourceGatherer implements Behavior {
     }
 
     @Override
-    public NamespaceID key() {
+    public Goal getGoal(BaseEntity baseEntity) {
         return null;
+    }
+
+    @Override
+    public NamespaceID key() {
+        return key;
     }
 }

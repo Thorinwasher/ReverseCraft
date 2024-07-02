@@ -1,0 +1,7 @@
+{
+  "key": "behavior/small_cattle",
+  "type": "behavior_type/resource",
+  "data": {
+    "radius": 5
+  }
+}

@@ -3,6 +3,7 @@ package org.sgrewritten;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.encoding.decoders.Decoders;
 import org.sgrewritten.encoding.decoders.JsonRegistryDecoder;
+import org.sgrewritten.entity.MovementBehavior;
 import org.sgrewritten.entity.PawnType;
 import org.sgrewritten.entity.attack.Attack;
 import org.sgrewritten.entity.attack.AttackType;
@@ -18,6 +19,7 @@ public class Registry<T extends Keyed> extends HashMap<NamespaceID, T> implement
     public static final Registry<Attack> ATTACKS = JsonRegistryDecoder.parse("/entity/attack", Decoders.ATTACK);
     public static final Registry<BehaviorType<?>> BEHAVIOR_TYPES = BehaviorType.BEHAVIOR_TYPES;
     public static final Registry<Behavior> BEHAVIORS = JsonRegistryDecoder.parse("/entity/behavior", Decoders.BEHAVIOR);
+    public static final Registry<MovementBehavior> MOVEMENT_BEHAVIORS = JsonRegistryDecoder.parse("/entity/movement", Decoders.MOVEMENT);
     public static final Registry<PawnType> PAWN_TYPES = JsonRegistryDecoder.parse("/entity/pawn", Decoders.PAWN);
 
     private final NamespaceID key;

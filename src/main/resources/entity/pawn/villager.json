@@ -6,12 +6,13 @@
     "behavior/logistics_apprentice",
     "behavior/builder",
     "behavior/bad_researcher",
-    "behavior/breeding",
+    "behavior/slow_breeding",
     "behavior/villager_upgradeable",
-    "behavior/sleep"
+    "behavior/night_sleeper"
   ],
   "tribe": "tribe/villagers",
   "entity": "minecraft:villager",
   "name": "villager",
-  "max_health": 25
+  "max_health": 25,
+  "movement": "movement/medium"
 }

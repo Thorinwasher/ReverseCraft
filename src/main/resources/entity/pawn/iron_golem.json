@@ -10,5 +10,6 @@
   "tribe": "tribe/villagers",
   "entity": "minecraft:iron_golem",
   "name": "iron_golem",
-  "max_health": 100
+  "max_health": 100,
+  "movement": "movement/slow"
 }

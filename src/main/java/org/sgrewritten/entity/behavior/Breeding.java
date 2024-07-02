@@ -5,25 +5,33 @@ import net.minestom.server.coordinate.Vec;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.Priority;
 import org.sgrewritten.entity.BaseEntity;
+import org.sgrewritten.entity.goal.Breed;
+import org.sgrewritten.entity.goal.Goal;
 
 public class Breeding implements Behavior {
 
+    private final NamespaceID key;
+
+    private Breeding(NamespaceID key) {
+        this.key = key;
+    }
+
     public static Breeding from(JsonObject jsonObject, NamespaceID key) {
-        return new Breeding();
+        return new Breeding(key);
     }
 
     @Override
     public NamespaceID key() {
-        return null;
-    }
-
-    @Override
-    public void doTick(BaseEntity baseEntity) {
-        baseEntity.setVelocity(new Vec(0, 0, 0));
+        return key;
     }
 
     @Override
     public Priority getPriority(BaseEntity baseEntity) {
         return Priority.NONE;
+    }
+
+    @Override
+    public Goal getGoal(BaseEntity baseEntity) {
+        return new Breed(this);
     }
 }

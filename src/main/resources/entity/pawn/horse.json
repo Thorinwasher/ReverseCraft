@@ -1,11 +1,12 @@
 {
   "key": "pawn/horse",
   "behaviors": [
-    "behavior/breeding",
+    "behavior/slow_breeding",
     "behavior/fast_mount"
   ],
   "tribe": "tribe/farm_animal",
   "entity": "minecraft:horse",
   "name": "horse",
-  "max_health": 15
+  "max_health": 15,
+  "movement": "movement/fast"
 }

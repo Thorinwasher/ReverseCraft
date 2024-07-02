@@ -1,11 +1,12 @@
 {
   "key": "pawn/sheep",
   "behaviors": [
-    "behavior/resource",
-    "behavior/breeding"
+    "behavior/medium_cattle",
+    "behavior/fast_breeding"
   ],
   "tribe": "tribe/farm_animal",
   "entity": "minecraft:sheep",
   "name": "sheep",
-  "max_health": 10
+  "max_health": 10,
+  "movement": "movement/medium"
 }

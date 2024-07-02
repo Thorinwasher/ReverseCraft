@@ -4,15 +4,17 @@ import com.google.gson.JsonObject;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.Priority;
 import org.sgrewritten.entity.BaseEntity;
+import org.sgrewritten.entity.goal.Goal;
 
 public class Upgradeable implements Behavior {
-    public static Upgradeable from(JsonObject jsonObject, NamespaceID namespaceID) {
-        return new Upgradeable();
+    private final NamespaceID key;
+
+    public Upgradeable(NamespaceID key) {
+        this.key = key;
     }
 
-    @Override
-    public void doTick(BaseEntity baseEntity) {
-
+    public static Upgradeable from(JsonObject jsonObject, NamespaceID key) {
+        return new Upgradeable(key);
     }
 
     @Override
@@ -21,7 +23,12 @@ public class Upgradeable implements Behavior {
     }
 
     @Override
-    public NamespaceID key() {
+    public Goal getGoal(BaseEntity baseEntity) {
         return null;
+    }
+
+    @Override
+    public NamespaceID key() {
+        return key;
     }
 }

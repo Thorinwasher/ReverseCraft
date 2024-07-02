@@ -1,8 +1,8 @@
 {
-  "key" : "behavior/self_preservation",
-  "type" : "behavior_type/self_preservation",
+  "key": "behavior/self_preservation",
+  "type": "behavior_type/self_preservation",
   "data": {
-    "can_attack" : true,
+    "can_attack": true,
     "run_away": "when_hp_low"
   }
 }

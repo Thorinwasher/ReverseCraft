@@ -4,26 +4,35 @@ import com.google.gson.JsonObject;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.Priority;
 import org.sgrewritten.entity.BaseEntity;
-import org.sgrewritten.world.UpdatablePosition;
+import org.sgrewritten.entity.goal.*;
+import org.sgrewritten.entity.goal.group.IdleGoal;
 
 public class Resource implements Behavior {
-    public static Resource from(JsonObject jsonObject, NamespaceID namespaceID) {
-        return new Resource();
+    private final NamespaceID key;
+    private final int strollRadius;
+
+    public Resource(NamespaceID key, int strollRadius) {
+        this.key = key;
+        this.strollRadius = strollRadius;
     }
 
-    @Override
-    public UpdatablePosition getDestination(BaseEntity baseEntity) {
-
-        return null;
+    public static Resource from(JsonObject jsonObject, NamespaceID key) {
+        int strollRadius = jsonObject.get("radius").getAsInt();
+        return new Resource(key, strollRadius);
     }
 
     @Override
     public Priority getPriority(BaseEntity baseEntity) {
-        return Priority.NONE;
+        return Priority.LOW;
+    }
+
+    @Override
+    public Goal getGoal(BaseEntity baseEntity) {
+        return new IdleGoal(strollRadius, baseEntity);
     }
 
     @Override
     public NamespaceID key() {
-        return null;
+        return key;
     }
 }

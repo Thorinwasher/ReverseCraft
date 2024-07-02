@@ -1,11 +1,12 @@
 {
   "key": "pawn/cow",
   "behaviors": [
-    "behavior/resource",
-    "behavior/breeding"
+    "behavior/large_cattle",
+    "behavior/fast_breeding"
   ],
   "tribe": "tribe/farm_animal",
   "entity": "minecraft:cow",
   "name": "cow",
-  "max_health": 10
+  "max_health": 10,
+  "movement": "movement/medium"
 }

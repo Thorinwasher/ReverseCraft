@@ -4,15 +4,17 @@ import com.google.gson.JsonObject;
 import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.Priority;
 import org.sgrewritten.entity.BaseEntity;
+import org.sgrewritten.entity.goal.Goal;
 
 public class Sleeper implements Behavior {
-    public static Sleeper from(JsonObject jsonObject, NamespaceID namespaceID) {
-        return new Sleeper();
+    private final NamespaceID key;
+
+    public Sleeper(NamespaceID key) {
+        this.key = key;
     }
 
-    @Override
-    public void doTick(BaseEntity baseEntity) {
-
+    public static Sleeper from(JsonObject jsonObject, NamespaceID key) {
+        return new Sleeper(key);
     }
 
     @Override
@@ -21,7 +23,12 @@ public class Sleeper implements Behavior {
     }
 
     @Override
-    public NamespaceID key() {
+    public Goal getGoal(BaseEntity baseEntity) {
         return null;
+    }
+
+    @Override
+    public NamespaceID key() {
+        return key;
     }
 }

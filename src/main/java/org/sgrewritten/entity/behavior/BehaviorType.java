@@ -19,7 +19,7 @@ public class BehaviorType<T extends Behavior> implements BiFunction<JsonObject, 
     public static final BehaviorType<Resource> RESOURCE = register(Resource::from, ReversedNamespace.fromKey("behavior_type/resource"));
     public static final BehaviorType<ResourceGatherer> RESOURCE_GATHERER = register(ResourceGatherer::from, ReversedNamespace.fromKey("behavior_type/resource_gatherer"));
     public static final BehaviorType<SelfPreservation> SELF_PRESERVATION = register(SelfPreservation::from, ReversedNamespace.fromKey("behavior_type/self_preservation"));
-    public static final BehaviorType<Sleeper> SLEEP = register(Sleeper::from, ReversedNamespace.fromKey("behavior_type/sleep"));
+    public static final BehaviorType<Sleeper> SLEEP = register(Sleeper::from, ReversedNamespace.fromKey("behavior_type/sleeper"));
     public static final BehaviorType<Upgradeable> UPGRADEABLE = register(Upgradeable::from, ReversedNamespace.fromKey("behavior_type/upgradeable"));
 
     private final BiFunction<JsonObject, NamespaceID, T> constructor;

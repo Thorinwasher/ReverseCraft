@@ -1,0 +1,7 @@
+{
+  "key": "behavior/medium_cattle",
+  "type": "behavior_type/resource",
+  "data": {
+    "radius": 10
+  }
+}

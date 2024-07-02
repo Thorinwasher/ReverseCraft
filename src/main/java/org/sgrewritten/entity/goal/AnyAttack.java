@@ -4,9 +4,8 @@ import net.minestom.server.utils.NamespaceID;
 import org.sgrewritten.entity.BaseEntity;
 import org.sgrewritten.entity.behavior.Behavior;
 import org.sgrewritten.namespace.ReversedNamespace;
-import org.sgrewritten.world.UpdatablePosition;
 
-public class Build implements Goal {
+public class AnyAttack implements Goal {
 
     @Override
     public void tick() {
@@ -20,6 +19,6 @@ public class Build implements Goal {
 
     @Override
     public NamespaceID key() {
-        return ReversedNamespace.fromKey("goal/build");
+        return ReversedNamespace.fromKey("goal/any_attack");
     }
 }

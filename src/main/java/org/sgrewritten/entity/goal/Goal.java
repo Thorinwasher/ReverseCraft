@@ -1,9 +1,10 @@
 package org.sgrewritten.entity.goal;
 
-import org.sgrewritten.entity.BaseEntity;
-import org.sgrewritten.world.UpdatablePosition;
+import org.sgrewritten.namespace.Keyed;
 
-public interface Goal {
+public interface Goal extends Keyed {
 
-    UpdatablePosition getDestination();
+    void tick();
+
+    boolean isCompleted();
 }

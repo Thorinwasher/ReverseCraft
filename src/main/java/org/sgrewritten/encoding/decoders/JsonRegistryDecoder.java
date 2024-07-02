@@ -22,7 +22,6 @@ public class JsonRegistryDecoder {
         try {
             Registry<T> registry = new Registry<>(ReversedNamespace.fromKey(location));
             URI uri = Main.class.getResource(location).toURI();
-            System.out.println(location);
             if (uri.getScheme().equals("jar")) {
                 try (FileSystem fileSystem = FileSystems.newFileSystem(uri, Collections.emptyMap())) {
                     try (Stream<Path> pathStream = Files.walk(fileSystem.getPath(location), 1)) {
@@ -34,6 +33,7 @@ public class JsonRegistryDecoder {
                     insertIntoRegistry(pathStream, location, registry, decoder);
                 }
             }
+            System.out.println(registry.keySet());
             return registry;
         } catch (URISyntaxException | IOException e) {
             throw new RuntimeException(e);

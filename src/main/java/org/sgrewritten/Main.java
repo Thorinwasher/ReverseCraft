@@ -5,8 +5,12 @@ import net.minestom.server.command.CommandManager;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.InstanceManager;
 import net.minestom.server.instance.LightingChunk;
-import org.sgrewritten.command.CommandRegistry;
+import org.sgrewritten.command.CommandRegister;
+import org.sgrewritten.entity.attack.Ranged;
 import org.sgrewritten.world.FlatWorldGenerator;
+import org.sgrewritten.world.PerlinNoiseGenerator;
+
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,12 +18,12 @@ public class Main {
         InstanceManager manager = MinecraftServer.getInstanceManager();
         InstanceContainer instanceContainer = manager.createInstanceContainer();
 
-        instanceContainer.setGenerator(new FlatWorldGenerator());
+        instanceContainer.setGenerator(new PerlinNoiseGenerator(new Random().nextInt()));
         instanceContainer.setChunkSupplier(LightingChunk::new);
         instanceContainer.setTime(0);
-        ListenerRegistry.registerAllListeners(instanceContainer);
+        ListenerRegister.registerAllListeners(instanceContainer);
         CommandManager commandManager = MinecraftServer.getCommandManager();
-        CommandRegistry.registerAllCommands(commandManager);
+        CommandRegister.registerAllCommands(commandManager);
         minecraftServer.start(System.getProperty("address", "0.0.0.0"), Integer.getInteger("port", 25565));
     }
 }

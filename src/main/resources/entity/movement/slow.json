@@ -1,0 +1,7 @@
+{
+  "key": "movement/slow",
+  "walking": 2,
+  "swimming": 2.5,
+  "sprinting": 3,
+  "sneaking": 1.5
+}

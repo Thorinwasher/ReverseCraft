@@ -10,5 +10,6 @@
   "tribe": "tribe/villagers",
   "entity": "minecraft:snow_golem",
   "name": "snow_golem",
-  "max_health": 40
+  "max_health": 40,
+  "movement": "movement/medium"
 }
