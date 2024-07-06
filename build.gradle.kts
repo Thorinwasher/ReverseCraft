@@ -14,7 +14,7 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation("net.minestom:minestom-snapshots:f1d5940855")
+    implementation("net.minestom:minestom-snapshots:0129aedae3")
     implementation("com.google.guava:guava:33.2.1-jre")
     implementation("com.github.xaguzman:pathfinding:0.2.6")
     implementation("dev.thorinwasher:minestruct:1.0-SNAPSHOT")
