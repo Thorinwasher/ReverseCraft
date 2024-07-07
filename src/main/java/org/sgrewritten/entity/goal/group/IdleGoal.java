@@ -18,7 +18,7 @@ public class IdleGoal extends GoalGroup {
     public IdleGoal(int strollRadius, BaseEntity baseEntity) {
         super(List.of(new ProbabilityHolder<>(new StrollAroundArea(strollRadius, baseEntity), 0.2),
                 new ProbabilityHolder<>(new Rest(RANDOM.nextInt(10, 20)), 0.4),
-                new ProbabilityHolder<>(new LookAround(baseEntity), 0.4))
+                new ProbabilityHolder<>(new LookAround(baseEntity, RANDOM.nextInt(10,20), 6), 0.4))
         );
     }
 
